@@ -21,27 +21,7 @@ The goal is to provide **stakeholders** with a clear, interactive view of busine
 - **Pandas**: Data manipulation
 - **Plotly**: Interactive charts
 - **Streamlit**: Web dashboard framework
-- **Jupyter Notebook** *(optional)*: Data exploration
-
----
-
-## 📂 Project Structure
-superstore-analytics-dashboard/
-- data/
-    - Superstore-dataset.csv        
-
-- notebooks/
-    - superstore_data_exploration.ipynb  
-
-- src/
-    - superstore_data_exploration.py  
-    - superstore_dashboard.py         
-
-- screenshots/
-    - dashboard_preview.png
-- README.md                       
-- requirements.txt                    
-- .gitignore                          
+- **Jupyter Notebook** *(optional)*: Data exploration                  
 
 ---
 ## 📊 Exploratory Data Analysis (EDA) Results
@@ -114,3 +94,21 @@ This analysis explores the **Superstore dataset** to uncover trends in sales, pr
 
 ### 📜 License
 - This project is open source and available under the MIT License.
+
+## 📂 Project Structure
+superstore-analytics-dashboard/
+- data/
+    - Superstore-dataset.csv        
+
+- notebooks/
+    - superstore_data_exploration.ipynb  
+
+- src/
+    - superstore_data_exploration.py  
+    - superstore_dashboard.py         
+
+- screenshots/
+    - dashboard_preview.png
+- README.md                       
+- requirements.txt                    
+- .gitignore        
