@@ -2,7 +2,7 @@
 
 An **interactive sales and profit dashboard** built using Python, Streamlit, and Plotly to analyze the **Sample Superstore** dataset.  
 This project demonstrates **data exploration, KPI tracking, and business insights** for retail analytics.
-
+[Streamlit Live Demo](https://superstoredashboard-4yphbux9wjbqtcfs8j5gnk.streamlit.app/)
 ---
 
 ## 🚀 Project Overview
@@ -23,6 +23,13 @@ The goal is to provide **stakeholders** with a clear, interactive view of busine
 - **Streamlit**: Web dashboard framework
 - **Matplotlib & Seaborn**: Data visualization
 - **Jupyter Notebook** *(optional)*: Data exploration
+
+---
+
+## 📊 Example Dashboard View
+![Dashboard Full](screenshots/dashboard_full.png)
+![Sales by Category](screenshots/chart_1.png)
+![Monthly Sales](screenshots/chart_2.png)
 
 ---
 
