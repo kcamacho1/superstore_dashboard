@@ -21,9 +21,11 @@ The goal is to provide **stakeholders** with a clear, interactive view of busine
 - **Pandas**: Data manipulation
 - **Plotly**: Interactive charts
 - **Streamlit**: Web dashboard framework
-- **Jupyter Notebook** *(optional)*: Data exploration                  
+- **Matplotlib & Seaborn**: Data visualization
+- **Jupyter Notebook** *(optional)*: Data exploration
 
 ---
+
 ## 📊 Exploratory Data Analysis (EDA) Results
 
 This analysis explores the **Superstore dataset** to uncover trends in sales, profit, and category performance.
@@ -63,52 +65,15 @@ This analysis explores the **Superstore dataset** to uncover trends in sales, pr
 ---
 
 ## ⚡ How to Run Locally
-1. Clone the repository:
-    git clone https://github.com/yourusername/superstore-analytics-dashboard.git
+```bash
+# 1. Clone the repository
+git clone https://github.com/kcamacho1/superstore_dashboard.git
 
-2. Navigate into the project folder:
-   cd superstore-analytics-dashboard
+# 2. Navigate into the project folder
+cd superstore_dashboard
 
-3. Install dependencies:
-   pip install -r requirements.txt
+# 3. Install dependencies
+pip install -r requirements.txt
 
-4. Run the Streamlit dashboard:
-   streamlit run src/superstore_dashboard.py
-
-### 🌍 Live Demo
-- 🔗 View Dashboard on Streamlit Cloud (Link will be active after deployment)
-
-### 📌 Features
-- Filter sales data by date range and category
-- Track KPIs with dynamic metrics
-- View sales and profit trends over time
-- Analyze category & regional performance
-- Export filtered data for reporting
-
-### 📈 Skills Demonstrated
-- Data exploration & cleaning
-- SQL-style querying in Pandas
-- KPI calculation & business storytelling
-- Interactive dashboard development
-- Data visualization best practices
-
-### 📜 License
-- This project is open source and available under the MIT License.
-
-## 📂 Project Structure
-superstore-analytics-dashboard/
-- data/
-    - Superstore-dataset.csv        
-
-- notebooks/
-    - superstore_data_exploration.ipynb  
-
-- src/
-    - superstore_data_exploration.py  
-    - superstore_dashboard.py         
-
-- screenshots/
-    - dashboard_preview.png
-- README.md                       
-- requirements.txt                    
-- .gitignore        
+# 4. Run the Streamlit dashboard
+streamlit run src/superstore_dashboard.py
