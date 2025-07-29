@@ -28,17 +28,17 @@ The goal is to provide **stakeholders** with a clear, interactive view of busine
 ## 📂 Project Structure
 superstore-analytics-dashboard/
 - data/
- - Superstore-dataset.csv          # Raw dataset
+    - Superstore-dataset.csv          # Raw dataset
 
 - notebooks/
- - superstore_data_exploration.ipynb  # Optional: Jupyter notebook for exploration
+    - superstore_data_exploration.ipynb  # Optional: Jupyter notebook for exploration
 
 - src/
- - superstore_data_exploration.py  # Step 2: Python EDA script
- - superstore_dashboard.py         # Step 3: Streamlit dashboard script
+    - superstore_data_exploration.py  # Step 2: Python EDA script
+    - superstore_dashboard.py         # Step 3: Streamlit dashboard script
 
 - screenshots/
- - dashboard_preview.png           # For portfolio & README
+    - dashboard_preview.png           # For portfolio & README
 
 - README.md                           # Project documentation
 - requirements.txt                    # Python libraries needed
