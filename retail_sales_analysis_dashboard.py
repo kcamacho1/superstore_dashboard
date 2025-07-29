@@ -1,7 +1,12 @@
 import pandas as pd
+import chardet
+
+with open("data/Superstore-dataset.csv", "rb") as f:
+    result = chardet.detect(f.read())
+    print(result)
 
 # Load the dataset
-df = pd.read_csv("Superstore-dataset.csv", encoding="utf-8")
+df = pd.read_csv("data/Superstore-dataset.csv", encoding=result['encoding'])
 
 # Preview first 5 rows
 print("First 5 rows:")
