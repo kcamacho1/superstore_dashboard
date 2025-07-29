@@ -43,7 +43,37 @@ superstore-analytics-dashboard/
 - requirements.txt                    
 - .gitignore                          
 
+---
+## 📊 Exploratory Data Analysis (EDA) Results
 
+This analysis explores the **Superstore dataset** to uncover trends in sales, profit, and category performance.
+
+### **Key Insights**
+- **Total Sales:** \$2,297,200.86  
+- **Total Profit:** \$286,397.02  
+- **Average Order Value:** \$229.86  
+- **Top Sales Category:** Technology  
+- **Most Profitable Category:** Office Supplies  
+- **Highest Earning Region:** West
+
+---
+
+### **Visualizations**
+#### **1. Sales by Category**
+![Sales by Category](screenshots/sales_by_category.png)
+
+#### **2. Monthly Sales Over Time**
+![Monthly Sales](screenshots/monthly_sales.png)
+
+#### **3. Profit by Region**
+![Profit by Region](screenshots/profit_by_region.png)
+
+---
+
+### **Technical Notes**
+- Dataset cleaned: removed extra spaces, parsed dates, ensured numeric types
+- EDA performed using **Python, Pandas, Matplotlib, Seaborn**
+- Charts exported as PNG for portfolio display
 
 ---
 
@@ -84,34 +114,3 @@ superstore-analytics-dashboard/
 
 ### 📜 License
 - This project is open source and available under the MIT License.
-
-## 📊 Exploratory Data Analysis (EDA) Results
-
-This analysis explores the **Superstore dataset** to uncover trends in sales, profit, and category performance.
-
-### **Key Insights**
-- **Total Sales:** \$2,297,200.86  
-- **Total Profit:** \$286,397.02  
-- **Average Order Value:** \$229.86  
-- **Top Sales Category:** Technology  
-- **Most Profitable Category:** Office Supplies  
-- **Highest Earning Region:** West
-
----
-
-### **Visualizations**
-#### **1. Sales by Category**
-![Sales by Category](screenshots/sales_by_category.png)
-
-#### **2. Monthly Sales Over Time**
-![Monthly Sales](screenshots/monthly_sales.png)
-
-#### **3. Profit by Region**
-![Profit by Region](screenshots/profit_by_region.png)
-
----
-
-### **Technical Notes**
-- Dataset cleaned: removed extra spaces, parsed dates, ensured numeric types
-- EDA performed using **Python, Pandas, Matplotlib, Seaborn**
-- Charts exported as PNG for portfolio display
