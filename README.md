@@ -64,71 +64,72 @@ This analysis explores the **Superstore dataset** to uncover trends in sales, pr
 This project follows a **three‑step workflow**:
 
 ### **1. Data Import & Setup**
-```python```
+```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
-
+```
 - Pandas for data handling, Matplotlib/Seaborn for visualization
 - os used for path handling and directory creation
 
 ### **2. Load & Inspect the Data**
-```python```
+```python
 df = pd.read_csv(DATA_PATH)
 print(df.shape, df.dtypes, df.isnull().sum())
-
+```
 - Reads CSV from data/ folder
 - Prints dataset size, column types, and missing values for a quick health check
 
 ### **3. Calculate KPIs**
-```python```
+```python
 total_sales = df['Sales'].sum()
 total_profit = df['Profit'].sum()
 avg_order_value = df['Sales'].mean()
-
+```
 - Computes Total Sales, Total Profit, and Average Order Value for quick business insights
 
 ### **4. Analyze by Category**
-```python```
+```python
 category_sales = df.groupby('Category')['Sales'].sum()
-
+```
 - Groups data by Category to compare sales and profit performance
 
 ### **5. Visualize Insights**
-```python```
+```python
 sns.barplot(x=category_sales.values, y=category_sales.index)
 plt.savefig("screenshots/sales_by_category.png")
-
+```
 - Creates bar charts for visual storytelling
 - Saves results in screenshots/ for portfolio use
 
 ### **6. Time Series Analysis**
-```python```
+```python
 df['Order Date'] = pd.to_datetime(df['Order Date'])
 sales_over_time = df.groupby(df['Order Date'].dt.to_period('M'))['Sales'].sum()
-
+```
 - Converts order dates into monthly periods for trend analysis
 
 ### **7. Regional Analysis**
-```python```
+```python
 region_profit = df.groupby('Region')['Profit'].sum()
 
 - Compares profitability across geographic regions
+```
 
 ## 📊 Example Dashboard View
 
 ## ⚡ How to run locally
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/kcamacho1/superstore_dashboard.git
 
-# 2. Navigate into the project folder
+### 2. Navigate into the project folder
 cd superstore_dashboard
 
-# 3. Install dependencies
+### 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Run the Streamlit dashboard
+### 4. Run the Streamlit dashboard
 streamlit run src/superstore_dashboard.py
 
 ---
@@ -170,3 +171,4 @@ superstore-analytics-dashboard/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
